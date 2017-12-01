@@ -1,0 +1,4 @@
+---
+hostname: cc
+docroot: /var/www/web
+log_file_type: apache2

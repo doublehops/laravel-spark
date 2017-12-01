@@ -1,0 +1,6 @@
+---
+root_password: root12
+username: dev
+password: dev
+database: cc
+test_database: cc_test
