@@ -1,4 +1,4 @@
 ---
 hostname: cc
-docroot: /var/www/web
+docroot: /var/www/public
 log_file_type: apache2
