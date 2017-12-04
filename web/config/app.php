@@ -177,6 +177,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        // amranidev scaffolding
+        Amranidev\ScaffoldInterface\ScaffoldInterfaceServiceProvider::class,
+        Amranidev\Ajaxis\AjaxisServiceProvider::class,
+        Spatie\Permission\PermissionServiceProvider::class,
+        Pusher\Laravel\PusherServiceProvider::class,
     ],
 
     /*
