@@ -26,3 +26,8 @@ Route::group(['middleware'=> 'web'],function(){
   Route::get('post/{id}/delete','\App\Http\Controllers\PostController@destroy');
   Route::get('post/{id}/deleteMsg','\App\Http\Controllers\PostController@DeleteMsg');
 });
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
