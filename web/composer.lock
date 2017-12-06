@@ -4,8 +4,66 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "12e53b859136ae9b9b7647be32ae2b20",
+    "content-hash": "8076f44d2601780af77b7d3bbecf5281",
     "packages": [
+        {
+            "name": "achillesp/laravel-crud-forms",
+            "version": "1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/achillesp/laravel-crud-forms.git",
+                "reference": "8f5e77361cde4fe6f4c9f9701d4b7e451b086ab6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/achillesp/laravel-crud-forms/zipball/8f5e77361cde4fe6f4c9f9701d4b7e451b086ab6",
+                "reference": "8f5e77361cde4fe6f4c9f9701d4b7e451b086ab6",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "^5.5",
+                "illuminate/database": "^5.5",
+                "illuminate/http": "^5.5",
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "orchestra/testbench": "~3.0",
+                "phpunit/phpunit": "^6.4"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Achillesp\\CrudForms\\CrudFormsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Achillesp\\CrudForms\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Achilles Panagiotou",
+                    "email": "achilles.p@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Create CRUD Forms for Laravel Models.",
+            "keywords": [
+                "Forms",
+                "crud",
+                "eloquent",
+                "laravel"
+            ],
+            "time": "2017-11-27T22:05:07+00:00"
+        },
         {
             "name": "amranidev/ajaxis",
             "version": "v3.0.5",
