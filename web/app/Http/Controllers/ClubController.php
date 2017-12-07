@@ -15,6 +15,21 @@ class ClubController extends Controller
 
         $this->formFields = $this->getFormFields();
         $this->indexFields = $this->getIndexFields();
+
+        $this->validationRules = [
+            'name' => 'required',
+            'state' => 'required',
+        ];
+
+        $this->validationMessages = [
+            'name.required' => 'Name is required',
+            'state.required' => 'State is required',
+        ];
+
+        $this->validationAttributes = [
+            'name' => 'Name',
+            'state' => 'State',
+        ];
     }
 
     protected function getIndexFields()
