@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Achillesp CRUD
+
+Route::resource('/clubs', 'ClubController');
+
+// END CRUD
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

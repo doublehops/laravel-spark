@@ -1,0 +1,39 @@
+create migration
+  php artisan make:model <MODEL> -m
+
+Add route
+  Route::resource('/posts', 'PostController');
+
+Create controller
+
+  use App\Post;
+  use Achillesp\CrudForms\CrudForms;
+
+class PostController extends Controller
+{
+      use CrudForms;
+
+    public function __construct(Post $post)
+    {
+        $this->model = $post;
+
+        $this->formFields = $this->getFormFields();
+        $this->indexFields = $this->getIndexFields();
+    }
+
+    protected function getIndexFields()
+    {
+        return [
+            ['name' => 'name', 'label' => 'Name', 'type' => 'text'],
+            ['name' => 'state', 'label' => 'Name', 'type' => 'text'],
+        ];
+    }
+
+    protected function getFormFields()
+    {
+        return [
+            ['name' => 'name', 'label' => 'Name', 'type' => 'text'],
+            ['name' => 'state', 'label' => 'State', 'type' => 'text'],
+        ];
+    }
+}
