@@ -13,6 +13,8 @@ class ClubController extends Controller
     {
         $this->model = $club;
 
+        // $this->bladeLayout = 'layouts.app'; // DEFINE DIFFERENT LAYOUT HERE
+
         $this->formFields = $this->getFormFields();
         $this->indexFields = $this->getIndexFields();
 
